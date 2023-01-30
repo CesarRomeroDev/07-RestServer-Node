@@ -5,7 +5,7 @@ class Server {      //clase Server
     
     constructor(){  //inicializamos atributos y metodos 
         this.app = express();   //iniciamos express con el nombre de app
-        this.port = process.env.PORT;   //inicializamos variables de entorno
+        this.port = process.env.PORT || 3000;   //inicializamos variables de entorno
         this.usersPath = '/api/users';  //inicializamos variables del path(ruta)
         //middlewares
         this.middlewares();     //inicializamos middlewares.
